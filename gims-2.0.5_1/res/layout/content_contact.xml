@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/loading_form" android:background="@drawable/whitebg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <EditText android:textSize="18.0dip" android:id="@id/email" android:background="@drawable/edit_border" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:ems="10" android:inputType="textEmailAddress" android:fontFamily="@font/regular" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/med_gray1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Enter the e-mail id or contact number to add to your Gims Contact " android:fontFamily="@font/regular0" android:textAlignment="center" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <Button android:textColor="@color/blue" android:id="@id/SKIP" android:background="@drawable/gradient_blue_border" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Cancel" android:onClick="cancel" android:fontFamily="@font/regular" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" android:layout_marginEnd="20.0dip" style="@style/GimButtonStyle" />
+                <Button android:id="@id/Sync" android:background="@drawable/gradient_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Add Contact" android:onClick="add" android:fontFamily="@font/regular" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" android:layout_marginStart="20.0dip" style="@style/GimButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

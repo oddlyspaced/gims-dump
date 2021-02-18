@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_video_call" android:id="@id/vid_call" android:visible="false" android:title="Video Call" />
+    <item android:icon="@drawable/ic_phone_call" android:id="@id/aud_call" android:visible="false" android:title="Audio Call" />
+    <item android:visible="false" android:title="@string/mute_notification_sound" />
+</menu>

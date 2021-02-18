@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:contentInsetStart="5.0dip" android:contentInsetLeft="5.0dip" app:contentInsetLeft="5.0dip" app:contentInsetStart="5.0dip" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:id="@id/close" android:background="@drawable/bg_selectable_backbutton" android:clickable="true" android:layout_width="38.0dip" android:layout_height="fill_parent">
+                    <ImageView android:layout_gravity="center" android:layout_width="18.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" app:srcCompat="@drawable/ic_option_close" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center|right" android:id="@id/txtTitleH" android:paddingTop="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Edit Profile" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="end|center" android:id="@id/saveChanges" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="24.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" app:srcCompat="@drawable/ic_check_symbol" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/edit_profile_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="20.0dip" android:elevation="0.0dip" app:cardCornerRadius="50.0dip">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/user" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textStyle="bold" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/edit_photo" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Choose profile photo" android:textAlignment="center" />
+                <TextView android:textStyle="bold" android:textColor="#ff2196f3" android:layout_gravity="center_horizontal" android:id="@id/remove_photo" android:background="?android:selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Remove photo" android:textAlignment="center" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Name" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:id="@id/user_name" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:includeFontPadding="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/selector_marker_text" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Gender" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:id="@id/user_gender" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Click Here" android:maxLines="1" android:includeFontPadding="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/user_dbl" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/selector_marker_text" android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date Of Birth" />
+                            <ImageButton android:layout_gravity="center" android:id="@id/clear_dob" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?android:selectableItemBackground" android:tint="#ff7a7a7a" android:onClick="clearDob" app:srcCompat="@drawable/ic_option_close" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                            <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:id="@id/user_dob" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Click Here" android:maxLines="1" android:includeFontPadding="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:foreground="?android:selectableItemBackground" android:text="Phone" />
+                                <ImageButton android:layout_gravity="center" android:id="@id/edit_phone" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?android:selectableItemBackground" android:src="@drawable/ic_pencil_gray" android:tint="#ff7a7a7a" android:onClick="editMobile" />
+                                <ImageButton android:layout_gravity="center" android:id="@id/delete_phone" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?android:selectableItemBackground" android:tint="#ff7a7a7a" android:layout_alignParentLeft="true" android:onClick="deleteMobile" app:srcCompat="@drawable/ic_option_close" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                                <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:layout_gravity="center" android:id="@id/country_code" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="+91" android:maxLines="1" android:inputType="none" />
+                                <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:id="@id/mobile" android:paddingLeft="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:includeFontPadding="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:layout_gravity="center" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="Email" />
+                                <ImageButton android:layout_gravity="center" android:id="@id/edit_email" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?android:selectableItemBackground" android:src="@drawable/ic_pencil_gray" android:tint="#ff7a7a7a" android:layout_alignParentLeft="true" android:onClick="editEmail" />
+                                <ImageButton android:layout_gravity="center" android:id="@id/delete_email" android:background="@android:color/transparent" android:padding="0.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:foreground="?android:selectableItemBackground" android:tint="#ff7a7a7a" android:layout_alignParentLeft="true" android:onClick="deleteEmail" app:srcCompat="@drawable/ic_option_close" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                                <EditText android:textSize="16.0sp" android:textColor="@color/selector_marker_text" android:id="@id/user_email" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="6.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16.0sp" android:textColor="#ff2196f3" android:id="@id/occ_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="Occupation details" android:textAlignment="textStart" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff2196f3" android:id="@id/res_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="Residential details" android:textAlignment="textStart" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

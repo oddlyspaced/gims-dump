@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/card_margin" android:elevation="0.0dip" card_view:cardCornerRadius="@dimen/card_album_radius">
+        <RelativeLayout android:id="@id/bg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/thumbnail" android:background="?selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/album_cover_height" android:scaleType="fitXY" />
+            <TextView android:textSize="@dimen/album_title" android:textColor="@color/white" android:id="@id/title" android:paddingLeft="@dimen/album_title_padding" android:paddingTop="@dimen/album_title_padding" android:paddingRight="@dimen/album_title_padding" android:paddingBottom="@dimen/album_title_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/thumbnail" android:fontFamily="@font/regular0" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_notification_new" android:id="@id/alerts" android:visible="false" android:title="@string/alerts" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_robot" android:id="@id/bot" android:visible="true" android:title="Info Service" app:showAsAction="withText" />
+</menu>

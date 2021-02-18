@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0dip" android:textColor="@color/med_gray2" android:id="@id/group_members_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Selected Members" android:fontFamily="@font/regular" android:layout_marginStart="5.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom|center" android:id="@id/contact_list_recycler_view" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:foregroundGravity="bottom|center" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

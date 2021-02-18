@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/addmember" android:background="@color/bluelight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/member_not" android:layout_weight="3.0" android:fontFamily="@font/regular0" />
+    <Button android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/addContact" android:background="@drawable/author_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Add to Contact" android:maxLines="2" android:layout_weight="7.0" android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/grey" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="GIMS Setup" android:fontFamily="@font/regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/med_gray1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Setting up GIMS." android:fontFamily="@font/regular0" android:textAlignment="center" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <Button android:id="@id/proceed" android:background="@drawable/gradient_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Proceed" android:fontFamily="@font/regular" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" android:layout_marginStart="20.0dip" style="@style/GimButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <ProgressBar android:gravity="center" android:id="@id/progressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:max="100" android:progress="0" android:secondaryProgress="0" android:indeterminate="true" android:progressDrawable="@drawable/progress_circle" android:min="0" style="?android:progressBarStyleLarge" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

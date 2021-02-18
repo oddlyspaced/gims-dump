@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/med_gray2" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Send GIMS transcript to your email" android:fontFamily="@font/regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:gravity="center" android:id="@id/login_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" style="?android:progressBarStyleLarge" />
+                <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Please Wait.." android:fontFamily="@font/regular" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+                <TextView android:textSize="18.0sp" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="You are about to send the following Message" android:fontFamily="@font/regular0" />
+                <TextView android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TO" android:fontFamily="@font/regular0" />
+                <ScrollView android:tag="TO" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+                    <com.google.android.material.chip.ChipGroup android:id="@id/chipGroup2" android:tag="TO" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular0" />
+                </ScrollView>
+                <com.google.android.material.textfield.TextInputLayout android:tag="TO" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minWidth="32.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                    <AutoCompleteTextView android:id="@id/autoCompleteTextView" android:tag="TO" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" android:fontFamily="@font/regular0" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CC" android:fontFamily="@font/regular0" />
+                <ScrollView android:tag="CC" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+                    <com.google.android.material.chip.ChipGroup android:id="@id/chipGroup2CC" android:tag="CC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular0" />
+                </ScrollView>
+                <com.google.android.material.textfield.TextInputLayout android:tag="CC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minWidth="32.0dip" android:fontFamily="@font/regular0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                    <AutoCompleteTextView android:id="@id/autoCompleteTextViewCC" android:tag="CC" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" android:fontFamily="@font/regular0" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                <TextView android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BCC" android:fontFamily="@font/regular0" />
+                <ScrollView android:tag="BCC" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+                    <com.google.android.material.chip.ChipGroup android:id="@id/chipGroup2BCC" android:tag="BCC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular0" />
+                </ScrollView>
+                <com.google.android.material.textfield.TextInputLayout android:tag="BCC" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minWidth="32.0dip" android:fontFamily="@font/regular0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                    <AutoCompleteTextView android:id="@id/autoCompleteTextViewBCC" android:tag="BCC" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textNoSuggestions" android:fontFamily="@font/regular0" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View android:background="@android:color/darker_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+                <in.nic.gimkerala.Gim.Components.CustomWebview android:id="@id/web" android:background="@color/ash" android:layout_width="fill_parent" android:layout_height="500.0dip" android:fontFamily="@font/regular0" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:weightSum="3.0">
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:id="@id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="SEND" android:layout_weight="1.0" android:onClick="senMail" android:fontFamily="@font/regular0" app:backgroundTint="@color/blue" />
+                    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/white" android:id="@id/cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="X" android:layout_weight="1.0" android:onClick="senMail" android:fontFamily="@font/regular0" app:backgroundTint="@color/blue" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

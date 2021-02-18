@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/grey" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Select Contacts" android:fontFamily="@font/regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:id="@id/llSelectedList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/dark_gray1" android:ellipsize="end" android:gravity="center" android:layout_gravity="start" android:id="@id/selected_count" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:text="20" android:maxLines="1" android:lines="1" android:fontFamily="@font/regular0" android:textAlignment="center" />
+                <TextView android:textStyle="bold" android:textColor="#ff4d4c4c" android:id="@id/tvSelected" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/selected_contact" android:fontFamily="@font/regular" />
+                <androidx.recyclerview.widget.RecyclerView android:layout_gravity="start" android:id="@id/rvSelectedContact" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:foregroundGravity="bottom|center" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@drawable/bg_broadcast_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rvFrequentContact" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fabActionButton" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/white" app:maxImageSize="56.0dip" app:srcCompat="@drawable/ic_next_step_gradient" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

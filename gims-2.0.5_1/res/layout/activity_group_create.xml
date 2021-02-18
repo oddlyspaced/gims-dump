@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/grey" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Preview" android:fontFamily="@font/regular" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/grey" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleSH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="The group you are about to create" android:lines="1" android:fontFamily="@font/regular" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="20.0sp" android:textColor="@color/med_gray2" android:id="@id/group_title_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Name of the Group" />
+            <TextView android:textSize="17.0sp" android:textColor="@android:color/darker_gray" android:id="@id/group_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/med_gray2" android:id="@id/group_desc_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="Group description" />
+            <TextView android:textSize="17.0sp" android:textColor="@android:color/darker_gray" android:id="@id/group_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <include layout="@layout/content_group_create_detail" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/group_create_cancel" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100.0dip" android:layout_marginBottom="@dimen/fab_margin" app:backgroundTint="@color/white" app:maxImageSize="56.0dip" app:srcCompat="@drawable/ic_create_group_discard" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/group_create_ok" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/white" app:maxImageSize="56.0dip" app:srcCompat="@drawable/ic_create_group_ok" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

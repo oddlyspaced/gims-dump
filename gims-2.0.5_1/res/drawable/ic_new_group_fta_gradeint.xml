@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="50.0dip" android:width="50.0dip" android:viewportWidth="50.0" android:viewportHeight="50.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_new_group_fta_gradeint__0" android:pathData="M25,25m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    <path android:fillColor="#ffffffff" android:pathData="M18.231,36a0.837,0.837 0,0 1,-0.354 -0.079,0.845 0.845,0 0,1 -0.492,-0.767L17.385,30.923A3.389,3.389 0,0 1,14 27.539L14,17.384A3.388,3.388 0,0 1,17.384 14h15.23A3.388,3.388 0,0 1,36 17.384L36,27.539a3.388,3.388 0,0 1,-3.384 3.384L24.466,30.923L18.781,35.8A0.852,0.852 0,0 1,18.231 36ZM21.106,21.206a0.623,0.623 0,0 0,-0.622 0.622v0.415a0.623,0.623 0,0 0,0.622 0.622h3.11v3.11a0.623,0.623 0,0 0,0.622 0.622h0.415a0.623,0.623 0,0 0,0.622 -0.622L25.875,22.866h3.11a0.623,0.623 0,0 0,0.622 -0.622L29.607,21.829a0.624,0.624 0,0 0,-0.623 -0.622h-3.11L25.874,18.1a0.623,0.623 0,0 0,-0.622 -0.622h-0.415a0.623,0.623 0,0 0,-0.622 0.622v3.11Z" />
+</vector>

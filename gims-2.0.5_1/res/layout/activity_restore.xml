@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="20.0dip" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0dip" android:textColor="@color/med_gray2" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Restore Data" android:fontFamily="@font/regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_restore" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|center" android:id="@id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/colorPrimary" app:srcCompat="@drawable/ic_chat_w" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

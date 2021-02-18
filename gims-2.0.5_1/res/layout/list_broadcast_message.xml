@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="50.0dip" android:layout_height="50.0dip" android:foregroundGravity="center_horizontal" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" card_view:cardBackgroundColor="@android:color/transparent" card_view:cardCornerRadius="25.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+            <ImageView android:layout_gravity="center" android:id="@id/imvContactPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/ic_launcher" android:scaleType="centerInside" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/imBroadcastClose" android:background="@drawable/bg_broadcast_close" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_margin="2.0dip" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_close" />
+</FrameLayout>

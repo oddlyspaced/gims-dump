@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="in.nic.gimkerala" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <permission android:name="in.nic.gimkerala.GIMPERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="in.nic.gimkerala.GIMPERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appCategory="social" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="in.nic.gimkerala.Gim.Application.GIMApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/Theme.MaterialComponents.Light.Bridge" android:usesCleartextTraffic="false">
+        <activity android:exported="false" android:label="@string/title_activity_web_running" android:name="in.nic.gimkerala._gimsweb.WebRunningActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="in.nic.gimkerala._gimsweb.GimsWebService"/>
+        <activity android:label="QR Scan" android:name="in.nic.gimkerala._gimsweb.CaptureActivityPortrait" android:screenOrientation="fullSensor" android:stateNotNeeded="true" android:theme="@style/AppTheme.NoActionBar2"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="in.nic.gimkerala.webrtc.CallReceiveActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="fullSensor" android:theme="@style/AppTheme.NoActionBar2"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/battery_optimize" android:name="in.nic.gimkerala.Activities.OptimizeNotifications" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <activity android:configChanges="orientation|screenSize" android:name="in.nic.gimkerala.Activities.SplashscreenActivity" android:theme="@style/AppTheme.NoActionBar2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/title_activity_main" android:launchMode="singleTop" android:name="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.nic.gimkerala.Activities.Setup" android:noHistory="true" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="portrait" android:theme="@style/AppTheme.Home"/>
+        <activity android:exported="false" android:name="in.nic.gimkerala.Activities.SettingsSubItems" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="portrait" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="in.nic.gimkerala.Activities.AboutGims" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="portrait" android:theme="@style/AppThemeT2.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="in.nic.gimkerala.Activities.ImageViewer" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="in.nic.gimkerala.Activities.VideoViewer" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="in.nic.gimkerala.Activities.AudioViewer" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <activity android:exported="false" android:label="User Profile" android:name="in.nic.gimkerala.Activities.GroupReceiptActivity" android:parentActivityName="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:launchMode="singleTask" android:name="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <receiver android:directBootAware="true" android:exported="false" android:name="in.nic.gimkerala.Gim.Receivers.BootCompletedIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="in.nic.gimkerala.Gim.Receivers.NetworkChangeDetectReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="in.nic.gimkerala.Gim.Receivers.NetworkChangeDetectReceiverWifi">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="in.nic.gimkerala.files" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:exported="true" android:label="@string/sharenow" android:launchMode="singleTop" android:name="in.nic.gimkerala.Activities.ShareActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:theme="@style/AppThemeT1.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.nic.gimkerala.Activities.NotificationDirect" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <activity android:exported="false" android:label="@string/manage_cont" android:name="in.nic.gimkerala.Activities.AddContactActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.GroupDetail" android:parentActivityName="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI"/>
+        </activity>
+        <activity android:exported="false" android:label="User Profile" android:name="in.nic.gimkerala.Activities.UserProfile" android:parentActivityName="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.GroupCreateActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="in.nic.gimkerala.webrtc.CallActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar2"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="Public Key Details" android:name="in.nic.gimkerala.Activities.PkDetails" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION"/>
+        <service android:enabled="true" android:name="in.nic.gimkerala.Gim.Services.GimMessageService" android:stopWithTask="true"/>
+        <receiver android:enabled="true" android:exported="false" android:label="RestartServiceWhenStopped" android:name="in.nic.gimkerala.Gim.Receivers.SensorRestarterBroadcastReceiver">
+            <intent-filter>
+                <action android:name="gim.ActivityRecognition.RestartSensor"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:label="@string/title_activity_alerts" android:launchMode="singleTop" android:name="in.nic.gimkerala.Activities.AlertsActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <service android:name="in.nic.gimkerala.Gim.Services.FirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:label="@string/title_activity_my_profile" android:name="in.nic.gimkerala.Activities.MyProfileActivity" android:parentActivityName="in.nic.gimkerala.Activities.MainActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="in.nic.gimkerala.Activities.RestoreActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:screenOrientation="portrait" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="in.nic.gimkerala"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="in.nic.gimkerala.Gim.Jobs.MyReceiver"/>
+        <service android:name="in.nic.gimkerala.Gim.Jobs.GIMJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="in.nic.gimkerala.Activities.DigilockerAuthActivity" android:theme="@style/AppTheme.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="auth.gimkerala.nic.in" android:pathPrefix="/digilocker/auth" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="" android:name="in.nic.gimkerala.Activities.SearchActivity" android:theme="@style/AppThemeT2.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:label="Broadcast Message" android:name="in.nic.gimkerala.Activities.GIMBroadcastMessage" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:label="Select Contact" android:name="in.nic.gimkerala.Activities.SelectContactActivity" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Activities.MainActivity"/>
+        </activity>
+        <activity android:exported="false" android:label="Select contact" android:name="in.nic.gimkerala.Activities.SelectContactShare" android:theme="@style/AppThemeT1.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="in.nic.gimkerala.Gim.XMPP.Protocols.Adapters.ChatUI"/>
+        </activity>
+        <activity android:name="in.nic.gimkerala.GIMUIBase.GIMPublicActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.GroupCreateActivityTwo" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.WelcomeActivity1" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT1.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.WelcomeActivity2" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT3.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_main" android:name="in.nic.gimkerala.Activities.WelcomeActivity3" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT3.NoActionBar"/>
+        <activity android:exported="false" android:label="Edit Profile" android:name="in.nic.gimkerala.Activities.EditProfileActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Edit Email" android:name="in.nic.gimkerala.Activities.EditEmailMobileActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Occupation Details" android:name="in.nic.gimkerala.Activities.OccDetailsActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Government Related Details" android:name="in.nic.gimkerala.Activities.GovtDetailsActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Residential Details" android:name="in.nic.gimkerala.Activities.ResidentialDetailsActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Residential Details" android:name="in.nic.gimkerala.Activities.OrganizationDetailsActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <activity android:exported="false" android:label="Data Migration" android:name="in.nic.gimkerala.Activities.V5MigrateActivity" android:permission="in.nic.gimkerala.GIMPERMISSION" android:theme="@style/AppThemeT2.NoActionBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="false" android:exported="@bool/enable_gcm_scheduler_default" android:name="androidx.work.impl.background.gcm.WorkManagerGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="in.nic.gimkerala.workmanager-init" android:directBootAware="false" android:exported="false" android:multiprocess="true" android:name="androidx.work.impl.WorkManagerInitializer"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="in.nic.gimkerala.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

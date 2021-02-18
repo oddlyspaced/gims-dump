@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" app:alignContent="flex_start" app:alignItems="flex_start" app:flexWrap="wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/selected_tag_c" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/confidential_tag_selected" android:layout_marginEnd="5.0dip" />
+    <ImageView android:id="@id/selected_tag_i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/priority_tag_selected" android:layout_marginEnd="5.0dip" />
+    <ImageView android:id="@id/selected_tag_d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auto_delete_tag_selected" android:layout_marginEnd="5.0dip" />
+</com.google.android.flexbox.FlexboxLayout>

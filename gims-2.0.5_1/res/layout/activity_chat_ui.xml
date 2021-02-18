@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow" app:titleMarginStart="0.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center" android:id="@id/imLogoTopBorder" android:background="@drawable/bordercircleblue" android:layout_width="36.0dip" android:layout_height="36.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/imLogoTop" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/ic_launcher" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/imgActiveUserStatus" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_active_user_chat" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="3.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/grey" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="1" android:fontFamily="@font/regular" android:layout_marginEnd="5.0dip" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/grey" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleSH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="1" android:fontFamily="@font/regular" android:layout_marginEnd="5.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/blue" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitlePresence" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:lines="1" android:fontFamily="@font/regular" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_chat_ui" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="100.0dip" app:backgroundTint="@color/colorPrimary" app:srcCompat="@drawable/ic_chat_w" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

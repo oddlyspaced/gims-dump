@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/popup" android:background="@color/dark_blue1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="left" android:layout_gravity="start" android:id="@id/txtclose" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="left" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Elina Grofild" android:fontFamily="@font/regular" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffbdbdbd" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="" android:fontFamily="@font/regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:gravity="start|center|top" android:orientation="vertical" android:id="@id/layout" android:background="@color/dark_blue1" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="start" android:id="@id/image" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center|left|top" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="s" android:fontFamily="@font/regular" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/navigate_to_original" android:background="@drawable/edit_border_blue" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:foreground="?selectableItemBackgroundBorderless">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/ic_information" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Navigate to original message" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="Follow Me" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="50.0dip" android:width="50.0dip" android:viewportWidth="50.0" android:viewportHeight="50.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_add_contact_fta_gradient__0" android:pathData="M25,25m-25,0a25,25 0,1 1,50 0a25,25 0,1 1,-50 0" />
+    <path android:fillColor="#ffffffff" android:pathData="M36.561,24.434L33.94,24.434L33.94,21.813a1.311,1.311 0,1 0,-2.621 0v2.621L28.698,24.434a1.311,1.311 0,0 0,0 2.621L31.319,27.055v2.621a1.311,1.311 0,1 0,2.621 0L33.94,27.055L36.561,27.055a1.311,1.311 0,1 0,0 -2.621Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M21.521,25.85a4.61,4.61 0,1 0,-3.622 0,6.866 6.866,0 0,0 -4.9,6.545v0.247a1.019,1.019 0,0 0,1.029 1.029L25.472,33.671a1.019,1.019 0,0 0,1.029 -1.029L26.501,32.393A6.89,6.89 0,0 0,21.521 25.85Z" />
+</vector>

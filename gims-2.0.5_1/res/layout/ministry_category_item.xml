@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="?selectableItemBackground" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/gradient_blue" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip">
+        <ImageView android:gravity="start" android:layout_gravity="start" android:id="@id/imgSelected" android:background="?selectableItemBackground" android:padding="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_selected" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/light_gray1" android:layout_gravity="center" android:id="@id/text" android:padding="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="Order dfdf  dfdf dfdg ddg fefe" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

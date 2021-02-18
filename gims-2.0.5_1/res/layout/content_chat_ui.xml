@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.ContentFrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/content_chat_ui_add_member" />
+            <include layout="@layout/content_chat_ui_load_more" />
+            <LinearLayout android:orientation="vertical" android:id="@id/parent_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/reyclerview_message_list" android:background="#ffffffff" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="120.0dip" android:minHeight="150.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:background="@color/selection" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:background="@color/selection" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/overlay" android:background="@color/selection" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/content_chat_ui_new_alert_one" />
+        <include layout="@layout/content_chat_ui_message_controls_top" />
+        <include layout="@layout/content_chat_ui_sub_controls" />
+    </androidx.appcompat.widget.ContentFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

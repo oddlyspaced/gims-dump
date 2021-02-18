@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_notification_new" android:id="@id/alerts" android:visible="false" android:title="@string/alerts" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_search" android:id="@id/search" android:visible="true" android:title="Search" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_robot" android:id="@id/bot" android:visible="true" android:title="Info Service" app:showAsAction="withText" />
+    <item android:id="@id/custom_broadcast" android:visible="false" android:title="@string/cusrtom_broadcast" />
+    <item android:id="@id/create_group" android:visible="false" android:title="@string/create_group" />
+    <item android:id="@id/help" android:title="Help" />
+    <item android:id="@id/gims_web" android:visible="true" android:title="Gims Web" />
+</menu>

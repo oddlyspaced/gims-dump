@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/extras_gmoji" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="20.0sp" android:textColor="@color/ash" android:gravity="center|top" android:layout_gravity="center|top" android:id="@id/close_extras_gmoji" android:background="?selectableItemBackground" android:padding="5.0dip" android:clickable="true" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gmogirecyclerview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="500.0dip" android:minHeight="300.0dip" />
+</LinearLayout>

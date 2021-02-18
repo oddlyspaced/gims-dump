@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_video_call" android:id="@id/vid_call" android:visible="true" android:title="Video Call" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_phone_call" android:id="@id/aud_call" android:visible="true" android:title="Audio Call" app:showAsAction="always" />
+    <item android:id="@id/unfav" android:title="@string/unfav" />
+    <item android:id="@id/clear" android:visible="true" android:title="Clear Conversation" />
+    <item android:id="@id/mute" android:visible="true" android:title="@string/mute_notification_sound" />
+</menu>

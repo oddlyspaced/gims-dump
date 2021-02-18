@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:id="@id/activity_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <org.webrtc.SurfaceViewRenderer android:id="@id/remote_gl_surface_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <org.webrtc.SurfaceViewRenderer android:layout_gravity="end|bottom|center" android:id="@id/local_gl_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:text="Gims" android:layout_alignParentLeft="true" android:alpha="0.4" android:fontFamily="@font/pacificoregular" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/buttons_call_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:layout_above="@id/capture_format_text_call" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/cal_time_vid" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" android:elevation="15.0dip" app:cardCornerRadius="34.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/end_call" android:layout_width="38.0dip" android:layout_height="38.0dip" android:contentDescription="Disonnect Call" app:srcCompat="@drawable/ic_call_end_call_button" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:elevation="15.0dip" app:cardCornerRadius="34.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/button_call_switch_camera" android:layout_width="38.0dip" android:layout_height="38.0dip" android:contentDescription="Switch Camera" app:srcCompat="@drawable/ic_call_photo_camera" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" android:elevation="15.0dip" app:cardCornerRadius="34.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/button_call_toggle_mic" android:layout_width="38.0dip" android:layout_height="38.0dip" android:contentDescription="Toggle Mic" app:srcCompat="@drawable/ic_call_unmuted_one" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/call_status" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textAlignment="center" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/audio_call" android:background="@drawable/call_bg01" android:padding="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:text="Gims" android:layout_alignParentLeft="true" android:alpha="0.4" android:fontFamily="@font/pacificoregular" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="80.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+                <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/cardx" android:layout_width="226.0dip" android:layout_height="226.0dip" android:elevation="0.0dip" app:cardBackgroundColor="#32ffffff" app:cardCornerRadius="113.0dip" app:cardElevation="0.0dip">
+                    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="186.0dip" android:layout_height="186.0dip" android:elevation="0.0dip" app:cardBackgroundColor="#3affffff" app:cardCornerRadius="93.0dip" app:cardElevation="0.0dip">
+                        <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/cardA1" android:layout_width="146.0dip" android:layout_height="146.0dip" android:elevation="0.0dip" app:cardBackgroundColor="#81ffffff" app:cardCornerRadius="73.0dip" app:cardElevation="0.0dip">
+                            <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="3.0dip" app:cardBackgroundColor="#29ffffff" app:cardCornerRadius="50.0dip" app:cardElevation="0.0dip">
+                                <ImageView android:layout_gravity="center" android:id="@id/img_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" app:srcCompat="@drawable/user" />
+                            </androidx.cardview.widget.CardView>
+                        </androidx.cardview.widget.CardView>
+                    </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
+                <ImageView android:layout_gravity="center" android:id="@id/call_dot" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_call_dot" />
+                <ImageView android:layout_gravity="center" android:id="@id/call_dot0" android:layout_width="10.0dip" android:layout_height="10.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_call_dot" />
+                <ImageView android:layout_gravity="center" android:id="@id/call_dot1" android:layout_width="10.0dip" android:layout_height="10.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/ic_call_dot" />
+                <ImageView android:layout_gravity="center" android:id="@id/call_dot2" android:layout_width="1.0dip" android:layout_height="1.0dip" android:scaleType="centerInside" android:alpha="0.4" app:srcCompat="@drawable/ic_call_dot0" />
+            </FrameLayout>
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="GIMS User" android:shadowColor="@color/ash" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:fontFamily="@font/regular" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/call_type_text" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Audio Call" android:alpha="0.7" android:fontFamily="@font/regular" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/cal_time_aud" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00.00" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/buttons_audio_call_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_alignWithParentIfMissing="true">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginEnd="40.0dip" android:elevation="15.0dip" app:cardCornerRadius="34.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/button_call_toggle_speaker" android:layout_width="38.0dip" android:layout_height="38.0dip" android:contentDescription="Toggle Speaker" android:alpha="0.3" app:srcCompat="@drawable/ic_speaker" />
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="68.0dip" android:layout_height="68.0dip" android:alpha="0.8" android:elevation="15.0dip" app:cardCornerRadius="34.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/end_audio_call" android:padding="10.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:contentDescription="Disonnect Call" android:alpha="1.0" app:srcCompat="@drawable/ic_call_end_call_button" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/call_status_call" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Calling.." android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

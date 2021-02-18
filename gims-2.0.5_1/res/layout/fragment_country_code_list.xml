@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="LinearLayoutManager"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/button_close" android:background="?selectableItemBackgroundBorderless" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:tint="@color/dark_gray1" app:srcCompat="@drawable/ic_close" />
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:textColor="@color/dark_gray1" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Select Country Code" android:layout_weight="1.0" android:fontFamily="@font/regular0" />
+            <Button android:textColor="@android:color/white" android:gravity="center" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Action" style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:name="in.nic.gimkerala.Fragments.CountryCodeFragment" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

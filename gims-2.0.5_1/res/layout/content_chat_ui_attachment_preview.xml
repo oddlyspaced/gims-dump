@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_staging" android:background="#ff616161" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="5.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="You are about to share following document" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+        <LinearLayout android:gravity="end" android:layout_gravity="end|center" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" android:onClick="cancelAttachment">
+            <ImageButton android:layout_gravity="end|center" android:background="?selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="10.0dip" android:layout_height="10.0dip" android:onClick="cancelAttachment" app:srcCompat="@drawable/ic_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_staging_image" android:layout_width="fill_parent" android:layout_height="200.0dip" android:src="@drawable/ph" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/singlesideborder_attachment" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:gravity="center_vertical" android:layout_gravity="start" android:id="@id/img_staging_icon" android:padding="5.0dip" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" />
+                <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_gravity="end" android:id="@id/txt_staging_name" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Hello Message" android:fontFamily="@font/regular" android:textAlignment="textStart" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

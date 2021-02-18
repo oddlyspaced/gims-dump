@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.ContentFrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/addmember" android:background="@color/bluelight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0">
+                <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/member_not" android:layout_weight="3.0" android:fontFamily="@font/regular0" />
+                <Button android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/addContact" android:background="@drawable/author_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Add to Contact" android:maxLines="2" android:layout_weight="7.0" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/timeloader" />
+                    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff827717" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Load more.." android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/parent_list" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/reyclerview_message_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/controls" android:background="@color/controlbg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/count" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/txtcount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/copy" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/remove" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remove" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/reply" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reply" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/forward" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forward" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/email" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forward" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/delete" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:fontFamily="@font/fontawesome" android:textAlignment="center" />
+                    <TextView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forward" android:fontFamily="@font/regular" android:textAlignment="center" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/cancel" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="end" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/related" android:background="@color/controlbg" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Reply to.." />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="start" android:id="@id/messageimage" android:padding="5.0dip" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@mipmap/ic_launcher" android:scaleType="centerCrop" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Selected Message" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="end" android:layout_gravity="end" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="X" android:layout_weight="11.0" android:fontFamily="@font/regular" android:textAlignment="textEnd" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+                <Button android:textSize="18.0sp" android:textColor="@color/dark_blue1" android:gravity="center" android:layout_gravity="bottom" android:id="@id/controls_open" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                <EditText android:textColor="@color/bluelight" android:layout_gravity="center" android:id="@id/edittext_chatbox" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:hint="Type your message" android:maxLines="6" android:layout_weight="1.0" android:fontFamily="@font/regular" />
+                <Button android:textSize="18.0sp" android:textColor="@color/bluelight" android:gravity="center" android:layout_gravity="bottom" android:id="@id/button_chatbox_send" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                <Button android:textSize="18.0sp" android:textColor="@color/bluelight" android:gravity="center" android:layout_gravity="bottom" android:id="@id/sendAttachment" android:background="?selectableItemBackground" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/extras" android:background="#fff5f5f5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:minHeight="0.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:textSize="15.0sp" android:textColor="@color/ash" android:gravity="center" android:layout_gravity="bottom" android:id="@id/bold" android:background="?selectableItemBackground" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                    <Button android:textSize="15.0sp" android:textColor="@color/ash" android:gravity="center" android:layout_gravity="center" android:id="@id/italic" android:background="?selectableItemBackground" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                    <Button android:textSize="18.0sp" android:textColor="@color/ash" android:gravity="center" android:layout_gravity="center" android:id="@id/underline" android:background="?selectableItemBackground" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                    <Button android:textSize="18.0sp" android:textColor="@color/ash" android:gravity="center" android:layout_gravity="center" android:id="@id/color" android:background="?selectableItemBackground" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                </LinearLayout>
+                <LinearLayout android:gravity="end" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:textSize="15.0sp" android:textColor="@color/ash" android:gravity="center" android:layout_gravity="center" android:id="@id/expand" android:background="?selectableItemBackground" android:visibility="gone" android:clickable="true" android:layout_width="34.0dip" android:layout_height="48.0dip" android:text="" android:fontFamily="@font/fontawesome" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.ContentFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

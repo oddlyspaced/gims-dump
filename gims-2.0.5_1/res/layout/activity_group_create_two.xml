@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT2.ToolbarColoredBackArrow">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:baselineAligned="false">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="start|center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+                    <TextView android:textSize="18.0sp" android:textColor="@color/grey" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Create Group" android:fontFamily="@font/regular" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/grey" android:ellipsize="end" android:gravity="start|center" android:layout_gravity="start|center" android:id="@id/txtTitleSH" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Type the details of the group" android:lines="1" android:fontFamily="@font/regular" android:layout_marginEnd="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:textSize="18.0sp" android:textStyle="normal" android:textColorHint="@color/med_gray2" android:id="@id/group_name1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="12.0dip" android:fontFamily="@font/regular" app:counterOverflowTextColor="@color/med_gray2">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="18.0sp" android:textStyle="normal" android:id="@id/group_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Group Name" android:maxLines="1" android:lines="1" android:maxLength="80" android:inputType="text" android:fontFamily="@font/regular" android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:textSize="18.0sp" android:textStyle="normal" android:textColorHint="@color/med_gray2" android:id="@id/group_description1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/regular" app:counterOverflowTextColor="@color/med_gray2">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/med_gray1" android:gravity="top" android:id="@id/group_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:hint="Group Description" android:maxLines="5" android:lines="5" android:maxLength="80" android:inputType="textMultiLine" android:fontFamily="@font/regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/group_create_ok" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/white" app:maxImageSize="56.0dip" app:srcCompat="@drawable/ic_next_step_gradient" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

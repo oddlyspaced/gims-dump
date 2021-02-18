@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/controls" android:background="#fff6f6f6" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/star" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_pin_chat_new" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pin" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/copy" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_copy_new" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copy" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/reply" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/img_reply_img" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_reply_new" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reply" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/reply_private" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/img_reply_pri_img" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_reply_private_new" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Private" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/forward" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_forward" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forward" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/message_info" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_info" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Message Info" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/email" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_mail" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send Mail" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/digilocker" android:padding="5.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/img_photo" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_digilocker" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upload" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/delete" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_option_delete" />
+        <TextView android:textSize="11.0dip" android:textColor="#ff5d5d5d" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete" android:fontFamily="@font/regular" android:textAlignment="center" />
+    </LinearLayout>
+</LinearLayout>

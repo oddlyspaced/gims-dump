@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appbarl" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapse_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="?colorPrimaryDark" app:layout_scrollFlags="exitUntilCollapsed|scroll">
+            <androidx.appcompat.widget.Toolbar android:gravity="top" android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:minHeight="?actionBarSize" app:layout_collapseMode="pin" app:popupTheme="@style/AppTheme.PopupOverlay" app:theme="@style/AppThemeT1.ToolbarColoredBackArrow">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_gims" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:layout_gravity="left" android:id="@id/txtTitleSH" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Government Instant Messaging System" android:maxLines="1" android:fontFamily="@font/regular" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <in.nic.gimkerala.Gim.Components.GIMViewPager android:id="@id/tab_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="56.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.tabs.TabLayout android:scrollbarStyle="insideInset" android:layout_gravity="bottom" android:id="@id/tabs" android:background="@color/light_gray1" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginBottom="0.0dip" app:tabGravity="fill" app:tabMaxWidth="0.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@android:color/holo_red_dark" style="@style/MyCustomTabLayout" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:backgroundTint="@color/colorPrimary" app:srcCompat="@drawable/ic_broadcast_message_small" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

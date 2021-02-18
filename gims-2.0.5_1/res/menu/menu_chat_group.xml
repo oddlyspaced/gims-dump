@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/fav" android:visible="false" android:title="@string/fav" />
+    <item android:id="@id/clear" android:visible="true" android:title="Clear Conversation" />
+    <item android:id="@id/mute" android:visible="true" android:title="@string/mute_notification_sound" />
+    <item android:id="@id/resetE2EE" android:visible="true" android:title="@string/reset_e2ee_session" />
+</menu>

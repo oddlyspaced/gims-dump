@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText android:textSize="14.0sp" android:textColor="@android:color/black" android:layout_gravity="start" android:id="@id/search" android:background="@drawable/edit_border" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" android:hint="Search Contact" android:fontFamily="@font/regular" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+    <View android:background="@color/light_gray1" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/contact_list_recycler_view" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:padding="0.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:backgroundTint="@color/white" app:maxImageSize="56.0dip" app:srcCompat="@drawable/ic_add_contact_fta_gradient" />
+    </RelativeLayout>
+</LinearLayout>
