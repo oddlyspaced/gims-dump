@@ -5,15 +5,9 @@
 
 # direct methods
 .method public static do(Landroid/content/Context;)Z
-    .locals 1
+    .registers 1
 
-    new-instance v0, Lcom/scottyab/rootbeer/RootBeer;
+    const v0, 0
 
-    invoke-direct {v0, p0}, Lcom/scottyab/rootbeer/RootBeer;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0}, Lcom/scottyab/rootbeer/RootBeer;->isRooted()Z
-
-    move-result p0
-
-    return p0
+    return v0
 .end method
