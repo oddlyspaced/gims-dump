@@ -350,7 +350,7 @@
 
     if-nez v2, :cond_0
 
-    const-string p0, "TQR"
+    const-string p0, "REK"
 
     return-object p0
 
@@ -391,7 +391,7 @@
     return-object p0
 
     :cond_3
-    const-string p0, "SDF"
+    const-string p0, "REK"
 
     return-object p0
 
